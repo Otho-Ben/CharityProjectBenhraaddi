@@ -12,7 +12,9 @@
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(to right, #e8f5e9, #f1f8e9);
       margin: 0;
-      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     .navbar {
@@ -39,6 +41,7 @@
     .container {
       text-align: center;
       padding: 4rem 1rem;
+      flex: 1;
     }
 
     h1 {
@@ -82,6 +85,40 @@
       transform: translateY(2px);
       box-shadow: 0 2px 0 #388e3c;
     }
+
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .btn {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+      }
+
+      .navbar .nav-links a {
+        margin: 0.3rem 0.5rem 0 0;
+      }
+    }
   </style>
 </head>
 <body>
@@ -107,6 +144,10 @@
     <a th:href="@{/auth/login/superadmin}" class="btn"><i class="fas fa-shield-alt"></i> Connexion Super Admin</a>
   </div>
 </div>
+
+<footer>
+  © 2025 Projet Charité — Tous droits réservés
+</footer>
 
 </body>
 </html>
