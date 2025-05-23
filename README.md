@@ -49,3 +49,5 @@ cd charity-platform
 
 # 3. Lancez le projet
 mvn spring-boot:run
+
+Presentation Link : https://www.figma.com/deck/s504jhHibwZerXZcOfNug3/Mobile-Product-Review?node-id=1-494&t=ocxHyPHc70UIvnbU-1
